@@ -10,6 +10,6 @@ public class SimpleController {
     @GetMapping("/")
     public String homePage(Model model) {
         model.addAttribute("appName", "Demo Project!");
-        return "home";
+        return "register";
     }
 }

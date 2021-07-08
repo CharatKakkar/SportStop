@@ -1,6 +1,8 @@
 package com.login;
 
-public class LoginController {
+import org.springframework.stereotype.Controller;
 
+@Controller
+public class LoginController {
 
 }
