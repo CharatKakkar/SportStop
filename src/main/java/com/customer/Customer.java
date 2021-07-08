@@ -7,6 +7,8 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
 @NoArgsConstructor
@@ -20,14 +22,15 @@ public class Customer {
     Long id;
 
     public String getfName() {
+
         return fName;
     }
 
-    @NotNull
-    @Getter
+    @NotEmpty
+    @Min(5)
     String fName,lName;
     @Email(message = "Email should be valid")
-    @NotNull
+    @NotEmpty
     String email;
     @ValidatePassword
     String password;
