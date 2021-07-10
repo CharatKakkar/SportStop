@@ -6,10 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import javax.validation.constraints.Email;
-import javax.validation.constraints.Min;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.*;
 
 @NoArgsConstructor
 @Data
@@ -20,14 +17,8 @@ public class Customer {
     @SequenceGenerator(sequenceName = "Id_sequence" , allocationSize = 1 , name = "Id_sequence")
     @GeneratedValue(generator = "Id_sequence" , strategy = GenerationType.SEQUENCE)
     Long id;
-
-    public String getfName() {
-
-        return fName;
-    }
-
     @NotEmpty
-    @Min(5)
+    @Size(min = 5)
     String fName,lName;
     @Email(message = "Email should be valid")
     @NotEmpty
