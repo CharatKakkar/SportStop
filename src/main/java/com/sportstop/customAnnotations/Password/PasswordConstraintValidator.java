@@ -1,4 +1,4 @@
-package com.customAnnotations.Password;
+package com.sportstop.customAnnotations.Password;
 
 import org.passay.*;
 

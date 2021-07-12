@@ -1,4 +1,4 @@
-package com.customAnnotations.Password;
+package com.sportstop.customAnnotations.Password;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

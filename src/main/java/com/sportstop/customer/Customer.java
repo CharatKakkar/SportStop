@@ -1,8 +1,7 @@
-package com.customer;
+package com.sportstop.customer;
 
-import com.customAnnotations.Password.ValidatePassword;
+import com.sportstop.customAnnotations.Password.ValidatePassword;
 import lombok.Data;
-import lombok.Getter;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;

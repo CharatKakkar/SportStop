@@ -1,4 +1,4 @@
-package com.customer;
+package com.sportstop.customer;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

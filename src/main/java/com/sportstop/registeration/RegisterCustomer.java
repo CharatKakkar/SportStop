@@ -1,7 +1,7 @@
-package com.registeration;
+package com.sportstop.registeration;
 
-import com.customer.Customer;
-import com.customer.CustomerRepo;
+import com.sportstop.customer.Customer;
+import com.sportstop.customer.CustomerRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
